@@ -8,18 +8,9 @@
 :root {
     --primary-color: #854dff;
     --error-color: #ff5757;
-    color: #ffffff;
-    color: #f0f0f0;
-    color: #dbdbdb;
-    color: #716f6f;
-    color: #141414;
 }
 
-/*
-    color: #dbdbdb;
-    color: #716f6f;
-    color: #141414;
-*/ 
+
 
 body {
     max-width: 100vw;
@@ -35,10 +26,10 @@ body {
         background-color: #fff;
         border-radius: 20px;
         border-bottom-right-radius: 10rem;
+        padding-left: 2.5rem;
         .input-section {
             width: 100%;
             height: 25%;
-            padding-left: 2.5rem;
             padding-top: 2em;
             display: grid;
             grid-template-columns: repeat(4, 25%);
@@ -50,12 +41,12 @@ body {
                 input {
                     width: 85%;
                     display: block;
-                    height: 55px;
+                    height: 3.45rem;
                     font-size: 1.5rem;
-                    padding: 15px;
-                    margin-top: 5px;
-                    border-radius: 5px;
-                    border: 1px solid #f0f0f0;
+                    padding: 1rem;
+                    margin-top: .3rem;
+                    border-radius: .3rem;
+                    border: 1px solid #dbdbdb;
                     outline: none;
                     font-weight: 800;
                     appearance: textfield;
@@ -77,8 +68,6 @@ body {
         }
         .divider-section {
             width: 100%;
-            padding-left: 2.5em;
-            // padding-top: 1rem;
             display: flex;
             align-items: center;
             height: 4.5em;
@@ -103,6 +92,24 @@ body {
                 svg {
                     width: 50%;
                     height: 50%;
+                }
+            }
+        }
+        .output-section {
+            height: 50%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, calc(100% / 3));
+            & > *  {
+                display: flex;
+                align-items: center;
+                font-size: 3rem;
+                font-style: italic;
+                font-weight: 800;
+                span {
+                    color: var(--primary-color);
+                    font-size: 4.5rem;
+                    letter-spacing: .6rem;
                 }
             }
         }
