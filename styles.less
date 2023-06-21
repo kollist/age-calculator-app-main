@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #854dff;
+    --error-color: #ff5757;
+    color: #ffffff;
+    color: #f0f0f0;
+    color: #dbdbdb;
+    color: #716f6f;
+    color: #141414;
+}
+
+/*
+    color: #dbdbdb;
+    color: #716f6f;
+    color: #141414;
+*/ 
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    .container {
+        width: 45%;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 20px;
+        border-bottom-right-radius: 10rem;
+        .input-section {
+            width: 100%;
+            height: 25%;
+            padding-left: 2.5rem;
+            padding-top: 2em;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            grid-template-rows: 100%;
+            align-items: center;
+            .part{ 
+                color: #716f6f;
+                width: fit-content;
+                input {
+                    width: 85%;
+                    display: block;
+                    height: 55px;
+                    font-size: 1.5rem;
+                    padding: 15px;
+                    margin-top: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #f0f0f0;
+                    outline: none;
+                    font-weight: 800;
+                    appearance: textfield;
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                label {
+                    text-transform: uppercase;
+                    font-weight: small;
+                    letter-spacing: .15rem;
+                    font-size: .7em;
+                }
+            }
+        }
+        .divider-section {
+            width: 100%;
+            padding-left: 2.5em;
+            // padding-top: 1rem;
+            display: flex;
+            align-items: center;
+            height: 4.5em;
+            .line {
+                width: 80%;
+                background-color: #716f6f;
+                height: .05rem;
+            }
+            .icon {
+                width: 12.5%;
+                height: 100%;
+                background-color: var(--primary-color);
+                
+                &:hover {
+                    background-color: #141414;
+
+                }
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                svg {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+        }
+    }
+}
